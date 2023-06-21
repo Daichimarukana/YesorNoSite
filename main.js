@@ -6,7 +6,7 @@ window.onload = function () {
     if (params.has("c") == true) {
       backcode = params.get("c");
     } else {
-      backcode = "DiX8RfuZzreVQx9L_5Z5ie4Hx6MIhY1pmGbVV4lQvSq5Zx52icH8mBl2BLOEx2EIxSreXGtpBKYZgCH6zABvHMoyxVCfksNBi9hAzbDpOhCOGgof4cQbHBkiQVQ2McEAyB-DAOBen5tjBrvi8LLs_Z-L13Xb6afilMXKFXOlwLoxGU_2M667u52MAHRVvgqVH3hB3NLq5tqMwxyNgtACyRGZcDEIhbZx03BZvZE1UZrsSYy5tg42ht9MjcJiuLJEdTnOcCUHS7Bjd-4VhzjeeoHVDccFz5f1mZnAtTzEwY5mkHUDEwkHDUKUxSwitbST036lufEO51DnoJ4m0TV3Htfx4_g5B95HhojqOjfud5l50_fTeJ49NH_dfiIeIA8ByOAhs3htmNIQQiaToSicNb5K6oouJQd3Xipa49cOG1DyoDYT";
+      backcode = "DiX8RfuZzreVQx9L_5Z5ie4Hx6MIhY1pmGbVV4lQvSq5Zx52icH8mBl2BLOEx2EIxSreXGtpBKYZgCH6zABvHMoyxVCfksNBi9hAzbDpOhCOGgof4cQbHBkiQVQ2McEAyB-DAOBen5tjBrvi8LLs_Z-L13Xb6afilMXKFXOlwLoxGU_2M667u52MAHRVvgqVH3hB3NLq5tqMwxyNgtACyRGZcDEIhbZx03BZvZE1UZrsSYy5tg42ht9MjcJiuLJEdTnOcCUHS7Bjd-4VhzjeeoHVDccFz5f1mZnAtTzEwY5mkHUDEwkHDUKUxSwitbST036lufEO51DnoJ4m0TV3Htfx4_g5B95HhojqOjfud5l50_fTeJ49NH_dfiIeIA8ByOAhs3htmNIQQiaToSicNb5K6oouJQd3Xi1x44cNaLbTlS6";
     }
     
     // "DiX8ReaZzrfpP4jxuH4JVY0ne47QHoZ"をデコードする
