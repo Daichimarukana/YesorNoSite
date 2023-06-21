@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>はい&いいえジェネレーター</title>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+        <link id="PageStyleSheet" rel="stylesheet" href="style/style2.css" />
+        <link rel="icon" type="image/png" href="fabicon/icon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="fabicon/icon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="fabicon/icon-96x96.png" sizes="96x96" />
+        <link rel="apple-touch-icon" sizes="57x57"   href="fabicon/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60"   href="fabicon/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72"   href="fabicon/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76"   href="fabicon/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="fabicon/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="fabicon/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="fabicon/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="fabicon/apple-touch-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="fabicon/apple-touch-icon-180x180.png" />
+        <script src="url-comp.js"></script>
+
+        <script type="text/javascript">
+        var fgt = ""
+        window.onload = function(){
+        document.getElementById("checkButton").onclick = function(){
+        var str1 = document.getElementById("title").value;
+        var str2 = document.getElementById("ninsyo").value;
+        var str3 = document.getElementById("mes").value;
+        var str4 = document.getElementById("link1").value;
+        var str5 = document.getElementById("link2").value;
+
+        str7 = str3.replace(/\n/g, '<br>');
+
+        const originalStr=''+str7+'^=~'+str1+'^=~'+str2+'^=~'+str4+'^=~'+str5+'';
+        const encodedStr=URLCompressor.compress(originalStr);
+
+
+          var str = "https://over18.xn--48ji8b3b1c1dg4uro5h4fq416b.com/?c="+encodedStr+"";
+          var vpx = "https://over18.xn--48ji8b3b1c1dg4uro5h4fq416b.com/?c="+encodedStr+"";
+
+        if (str === undefined) {
+          alert("【1.】を選択して下さい。")
+        }else{
+          document.getElementById('the2').style.display = "none";//frend code
+          
+          document.getElementById('reload').style.display = "";//reload
+
+          document.getElementById("result").innerHTML = vpx;
+
+          navigator.clipboard.writeText(str);
+
+          let text = document.getElementById('copys').innerHTML;
+          document.getElementById('copys').innerHTML = 'コピーしました';
+        }
+        }
+      }
+      
+        </script>
+        
+    <meta property="og:url" content="https://xn--48ji8b3b1c1dg4uro5h4fq416b.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="はい&いいえジェネレーター - はい&いいえサイト">
+    <meta property="og:description" content="やらしいサイトなどでありがちな「はい」「いいえ」のやつを再現したものを簡単に作成できます。">
+    <meta property="og:image" content="/fotohap.png">
+        
+    </head>
+
+    <main>
+
+</form>
+<div id="the2">
+    <h1>1.はい&いいえジェネレーター</h1>
+    <p>やらしいサイトなどでありがちな「はい」「いいえ」のやつを再現したものを簡単に作成できます。</p>
+<h1>2.下記の入力欄にメッセージ等を入力して下さい！</h1>
+      <form method="get" name="mainForm" id = "inputto">
+
+          <div id="Title">
+              <p>「あなたは18歳以上ですか？」にあたる文を入力してください。</p>
+              <input type="text" name="title" id="title" value="" class="input" placeholder="あなたは81歳以上ですか？">
+          </div>
+
+          <div id="Ninsyo">
+            <p>「年齢認証」にあたる文を入力してください。</p>
+            <input type="text" name="ninsyo" id="ninsyo" value="" class="input" placeholder="年齢認証">
+          </div>
+
+          <div id="Mes">
+            <p>「ここから先は、アダルト商品を扱うアダルトサイトとなります。<br>18歳未満の方のアクセスは固くお断りします。」にあたる文を入力してください。</p>
+            <textarea type="text" name="mes" id="mes" class="textarea" maxlength="890" placeholder="ここから先は、アダルト商品を扱うアダルトサイトとなります。18歳未満の方のアクセスは固くお断りします。"></textarea >
+          </div>
+
+          <div id="Link1">
+            <p>「はい」ボタンのリンク先を入力してください</p>
+            <input type="text" name="link1" id="link1" class="input" placeholder="https://www.daichimarukana.com/">
+          </div>
+
+          <div id="Link2">
+            <p>「いいえ」ボタンのリンク先を入力してください</p>
+            <input type="text" name="link2" id="link2" class="input" placeholder="https://www.フォローされると喜びます.com/">
+          </div>
+        
+        </form>
+
+
+        <h1>3.生成ボタンを押して下さい！</h1>
+          <input type="button" id="checkButton" class="regist-on" value="生成">
+        
+          
+</div>
+          <div class="copys" id="copys"></div>
+          <textarea id="result" class="kanse"></textarea>
+
+          <input type="button" value="別のURLを生成する" class="regist-on2" onclick="window.location.reload();" id = "reload" />
+
+          <a href="https://daichimarukana.com" class="foo">©2022 - 2023 Daichimaru</a>
+          <a href="https://xn--48ji8b3b1c1dg4uro5h4fq416b.com/info/" class="foo">このサイトについて</a>
+          <a href="https://xn--48ji8b3b1c1dg4uro5h4fq416b.com/info/update" class="foo">アップデート履歴</a>
+    </main>
+
+
+</html>

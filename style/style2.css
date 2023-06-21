@@ -1,0 +1,403 @@
+@charset "UTF-8";
+.selectbox {
+  position: relative;
+}
+
+.selectbox::before,
+.selectbox::after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+}
+
+.selectbox::before {
+  display: inline-block;
+  right: 0;
+  width: 2.8em;
+  height: 2.8em;
+  border-radius: 10px;
+  background-color: #FFF;
+}
+
+.selectbox::after {
+  position: absolute;
+  top: 50%;
+  right: 1.4em;
+  transform: translate(50%, -50%) rotate(45deg);
+  width: 6px;
+  height: 6px;
+  border-bottom: 3px solid #FFF;
+  border-right: 3px solid #FFF;
+}
+
+.selectbox select {
+  appearance: none;
+  min-width: 230px;
+  height: 2.8em;
+  padding: .4em 3.6em .4em .8em;
+  border: none;
+  border-radius: 3px;
+  background-color: #FFF;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: rgb(32,32,32);
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px rgba(0,0,0,0.1);
+}
+
+.selectbox select:focus {
+  outline: 2px solid #252525;
+}
+
+.copys{
+  margin-top: 1em;
+  text-align: center;
+  color :rgb(255,68,68);
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 1.6em;
+}
+
+.input {
+  width: 97%;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 10px;
+  background: #f1f1f1;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: rgb(32,32,32);
+  font-size: 1em;
+  line-height: 1.5;
+  white-space: nowrap;
+  box-shadow:0px 0px 25px rgba(0,0,0,0.05) inset;
+  overflow-x: scroll; 
+  overflow-y : scroll ;
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.input:focus {
+  outline: 2px solid #252525;
+}
+
+.kanse {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  resize: none;
+  width: 97%;
+  height:250px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 10px;
+  background: #f1f1f1;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: rgb(32,32,32);
+  font-size: 1.2em;
+  line-height: 1.5;
+  box-shadow:0px 0px 25px rgba(0,0,0,0.05) inset;
+}
+
+.textarea {
+  resize: none;
+  width: 97%;
+  height:200px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 10px;
+  background: #f1f1f1;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: rgb(32,32,32);
+  font-size: 1em;
+  line-height: 1.5;
+  box-shadow:0px 0px 25px rgba(0,0,0,0.05) inset;
+}
+
+.textarea::placeholder {
+  color: #999;
+}
+
+.textarea:focus {
+  outline: 2px solid #252525;
+}
+
+.regist-on {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 7px 25px;
+  border-radius: 7px;
+  border: none;
+  background-color: #525252;
+  box-shadow: 0 4px 0 #252525;
+  position: relative;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 0.8% 4%;
+  cursor: pointer;
+  appearance: none;
+  }
+  .regist-on2 {
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 7px 25px;
+    border-radius: 7px;
+    border: none;
+    background-color: #525252;
+    box-shadow: 0 4px 0 #252525;
+    position: relative;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 0.8% 4%;
+    cursor: pointer;
+    appearance: none;
+    }
+
+a{
+  text-decoration: none;
+}
+body{
+    background-color: #f1f1f1;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+    padding: 50px 10px 50px 10px;
+    
+    width: 1050px;
+    margin-right:auto;
+    margin-left:auto;
+    }
+
+    main{
+      background-color: #fff;
+      border-radius: 25px;
+      box-shadow: 0px 0px 25px rgba(0,0,0,0.1);
+    padding: 3%;
+    color: rgb(32,32,32);
+    text-shadow: 0px 0px 25px rgba(0,0,0,0.1);
+    }
+
+    h1{
+        color: #252525;
+        font-family: 'Kosugi Maru', sans-serif;
+        font-size: 1cm;
+    }
+    
+    p{
+        color: rgb(32,32,32);
+        font-family: 'Zen Maru Gothic', sans-serif;
+        font-size: 1.4em;
+    }
+
+    .foo{
+        font-family: 'Zen Maru Gothic', sans-serif;
+        font-style: italic;
+        text-align: center;
+        color: rgb(200,200,200);
+        font-size: 1.0em;
+        top:4em;
+    }
+    
+@media screen and (max-width:1050px) {
+
+  
+.selectbox {
+  position: relative;
+}
+
+.selectbox::before,
+.selectbox::after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+}
+
+.selectbox::before {
+  display: inline-block;
+  right: 0;
+  width: 8.8em;
+  height: 8.8em;
+  border-radius: 30px;
+  background-color: #252525;
+}
+
+.selectbox::after {
+  position: absolute;
+  top: 50%;
+  right: 4.4em;
+  transform: translate(50%, -50%) rotate(45deg);
+  width: 30px;
+  height: 30px;
+  border-bottom: 14px solid #f1f1f1;
+  border-right: 14px solid #f1f1f1;
+}
+
+.selectbox select {
+  appearance: none;
+  width: 100%;
+  height: 8.6em;
+  border: none;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: rgb(32,32,32);
+  font-size: 1.0em;
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: 0px 0px 25px rgba(0,0,0,0.1);
+}
+
+.selectbox select:focus {
+  outline: 2px solid #252525;
+}
+
+
+
+
+.input {
+  width: 97%;
+  height: auto;
+  padding: 18px 20px;
+  border-radius: 30px;
+  background: #f1f1f1;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: rgb(32,32,32);
+  font-size: 3.2em;
+  line-height: 1.5;
+  white-space: nowrap;
+  box-shadow:0px 0px 25px rgba(0,0,0,0.05) inset;
+  overflow-x: scroll; 
+  overflow-y : scroll ;
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.input:focus {
+  outline: 5px solid #252525;
+}
+
+.kanse {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  resize: none;
+  width: 97%;
+  height:auto;
+  padding: 18px 20px;
+  border: none;
+  border-radius: 30px;
+  background: #f1f1f1;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: rgb(32,32,32);
+  font-size: 4em;
+  line-height: 1.5;
+  box-shadow:0px 0px 25px rgba(0,0,0,0.05) inset;
+}
+
+.textarea {
+  resize: none;
+  width: 97%;
+  height:200px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 30px;
+  background: #f1f1f1;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: rgb(32,32,32);
+  font-size: 3em;
+  line-height: 1.5;
+  box-shadow:0px 0px 25px rgba(0,0,0,0.05) inset;
+}
+
+.textarea::placeholder {
+  color: #999;
+}
+
+.textarea:focus {
+  outline: 5px solid #252525;
+}
+
+.regist-on {
+  margin-left: auto;
+  margin-right: auto;
+  width: 97%;
+  height: 3em;
+  display: block;
+  border: none;
+  background-color: #525252;
+  box-shadow: 0 4px 0 #252525;
+  position: relative;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  appearance: none;
+}
+
+.regist-on2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 97%;
+  height: 3em;
+  display: block;
+  border: none;
+  background-color: #525252;
+  box-shadow: 0 4px 0 #252525;
+  position: relative;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  appearance: none;
+} 
+
+  main{
+      border-radius: 25px;
+      box-shadow: 0px 0px 25px rgba(0,0,0,0.1);
+    padding: 3%;
+    text-shadow: 0px 0px 25px rgba(0,0,0,0.1);
+    }
+
+    h1{
+        font-family: 'Kosugi Maru', sans-serif;
+        font-size: 60px;
+    }
+    
+    p{
+        font-family: 'Zen Maru Gothic', sans-serif;
+        font-size: 40px;
+    }
+
+    .foo{
+      font-family: 'Zen Maru Gothic', sans-serif;
+      font-style: italic;
+      text-align: center;
+      color: rgb(200,200,200);
+      font-size: 30px;
+      top:4em;
+  }
+     
+    }
